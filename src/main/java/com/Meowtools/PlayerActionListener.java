@@ -59,17 +59,17 @@ public class PlayerActionListener implements Listener {
                 asConsole = config.sneakDropAsConsole;
             }
         } else if (pitch < -80) {
-            if (isSwap && !config.lookUpCommand.isEmpty()) {
-                command = config.lookUpCommand;
-                asConsole = config.lookUpAsConsole;
+            if (isSwap && !config.lookUpSwapCommand.isEmpty()) {
+                command = config.lookUpSwapCommand;
+                asConsole = config.lookUpSwapAsConsole;
             } else if (!isSwap && !config.lookUpDropCommand.isEmpty()) {
                 command = config.lookUpDropCommand;
                 asConsole = config.lookUpDropAsConsole;
             }
         } else if (pitch > 80) {
-            if (isSwap && !config.lookDownCommand.isEmpty()) {
-                command = config.lookDownCommand;
-                asConsole = config.lookDownAsConsole;
+            if (isSwap && !config.lookDownSwapCommand.isEmpty()) {
+                command = config.lookDownSwapCommand;
+                asConsole = config.lookDownSwapAsConsole;
             } else if (!isSwap && !config.lookDownDropCommand.isEmpty()) {
                 command = config.lookDownDropCommand;
                 asConsole = config.lookDownDropAsConsole;

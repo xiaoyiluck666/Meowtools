@@ -1,16 +1,16 @@
 # 配置文件版本号，用于在插件更新时自动替换老版本的配置文件
-configVersion: "1.0"
+configVersion: "1.1"
 
 # 调试模式开关，当设置为 true 时，插件会在控制台输出更多的调试信息
 debug: false
 
 # 视角向上时，按下换手键(F)执行的命令配置
-lookUpCommand:
+lookUpSwapCommand:
   command: "exampleLookUpCommand"  # 自定义命令名称或内容
   asConsole: false                 # 是否以控制台身份执行该命令
 
 # 视角向下时，按下换手键(F)执行的命令配置
-lookDownCommand:
+lookDownSwapCommand:
   command: "exampleLookDownCommand"
   asConsole: false
 
@@ -33,3 +33,11 @@ sneakSwapCommand:
 sneakDropCommand:
   command: "exampleSneakDropCommand"
   asConsole: false
+
+creeper:
+  protectTerrain: true   # 如果为 false，Creeper 爆炸会破坏地形
+  explodeAsFireworks: false # 如果为 true，Creeper 爆炸会产生日程序制的烟花
+
+messages:
+  reloadSuccess: "Meowtools配置已重新加载"
+  reloadNoPermission: "你没有权限执行此命令"

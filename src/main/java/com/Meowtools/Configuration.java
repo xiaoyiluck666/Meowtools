@@ -1,10 +1,10 @@
 package com.Meowtools;
 
 public class Configuration {
-    public final String lookUpCommand;
-    public final boolean lookUpAsConsole;
-    public final String lookDownCommand;
-    public final boolean lookDownAsConsole;
+    public final String lookUpSwapCommand;
+    public final boolean lookUpSwapAsConsole;
+    public final String lookDownSwapCommand;
+    public final boolean lookDownSwapAsConsole;
     public final String lookUpDropCommand;
     public final boolean lookUpDropAsConsole;
     public final String lookDownDropCommand;
@@ -15,18 +15,18 @@ public class Configuration {
     public final boolean sneakDropAsConsole;
     public final boolean debug;
 
-    public Configuration(String lookUpCommand, boolean lookUpAsConsole,
-                         String lookDownCommand, boolean lookDownAsConsole,
+    public Configuration(String lookUpSwapCommand, boolean lookUpSwapAsConsole,
+                         String lookDownSwapCommand, boolean lookDownSwapAsConsole,
                          String lookUpDropCommand, boolean lookUpDropAsConsole,
                          String lookDownDropCommand, boolean lookDownDropAsConsole,
                          String sneakSwapCommand, boolean sneakSwapAsConsole,
                          String sneakDropCommand, boolean sneakDropAsConsole,
                          boolean debug
     ) {
-        this.lookUpCommand = lookUpCommand;
-        this.lookUpAsConsole = lookUpAsConsole;
-        this.lookDownCommand = lookDownCommand;
-        this.lookDownAsConsole = lookDownAsConsole;
+        this.lookUpSwapCommand = lookUpSwapCommand;
+        this.lookUpSwapAsConsole = lookUpSwapAsConsole;
+        this.lookDownSwapCommand = lookDownSwapCommand;
+        this.lookDownSwapAsConsole = lookDownSwapAsConsole;
         this.lookUpDropCommand = lookUpDropCommand;
         this.lookUpDropAsConsole = lookUpDropAsConsole;
         this.lookDownDropCommand = lookDownDropCommand;

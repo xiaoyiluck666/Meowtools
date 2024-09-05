@@ -11,18 +11,19 @@ public class Xytool extends JavaPlugin {
     public void onEnable() {
         loadConfig();
         registerEventsAndCommands();
-        getLogger().info("Xytool插件已启用!");
+        getLogger().info("Meowtools插件已启用!");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("Xytool插件已禁用!");
+        getLogger().info("Meowtools插件已禁用!");
     }
 
     private void registerEventsAndCommands() {
         // 注册事件监听器和命令执行器
         getServer().getPluginManager().registerEvents(new PlayerActionListener(this), this);
         getCommand("xytool").setExecutor(new MeowtoolsCommand(this));
+        getServer().getPluginManager().registerEvents(new MeowControl(this), this);
     }
 
     private void checkAndUpdateConfig() {

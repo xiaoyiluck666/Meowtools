@@ -14,16 +14,20 @@ public class MeowtoolsCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (command.getName().equalsIgnoreCase("meowtools") && args.length > 0 && args[0].equalsIgnoreCase("reload")) {
-            if (sender.hasPermission("meowtools..reload")) {
-                plugin.loadConfig();
-                sender.sendMessage("Meowtools配置已重新加载");
+        if (command.getName().equalsIgnoreCase("xytool") && args.length > 0 && args[0].equalsIgnoreCase("reload")) {
+            if (sender.hasPermission("meowtools.reload")) {
+                plugin.reloadConfig(); // 确保配置重新加载
+                plugin.loadConfig();   // 更新内存中的配置对象
+                sender.sendMessage(getMessage("reloadSuccess"));
                 return true;
             } else {
-                sender.sendMessage("你没有权限执行此命令");
+                sender.sendMessage(getMessage("reloadNoPermission"));
                 return true;
             }
         }
         return false;
+    }
+    private String getMessage(String key) {
+        return plugin.getConfig().getString("messages." + key, "消息未定义: " + key);
     }
 }
