@@ -1,0 +1,8 @@
+name: Meowtools
+version: '1.0.0'
+main: com.Meowtools.Xytool
+api-version: '1.21.1'
+commands:
+  xytool:
+    description: Xytool插件命令
+    usage: /xytool reload

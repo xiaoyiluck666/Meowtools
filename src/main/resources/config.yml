@@ -1,0 +1,35 @@
+# 配置文件版本号，用于在插件更新时自动替换老版本的配置文件
+configVersion: "1.0"
+
+# 调试模式开关，当设置为 true 时，插件会在控制台输出更多的调试信息
+debug: false
+
+# 视角向上时，按下换手键(F)执行的命令配置
+lookUpCommand:
+  command: "exampleLookUpCommand"  # 自定义命令名称或内容
+  asConsole: false                 # 是否以控制台身份执行该命令
+
+# 视角向下时，按下换手键(F)执行的命令配置
+lookDownCommand:
+  command: "exampleLookDownCommand"
+  asConsole: false
+
+# 视角向上时，按下丢弃键(Q)执行的命令配置
+lookUpDropCommand:
+  command: "exampleLookUpDropCommand"
+  asConsole: false
+
+# 视角向下时，按下丢弃键(Q)执行的命令配置
+lookDownDropCommand:
+  command: "exampleLookDownDropCommand"
+  asConsole: false
+
+# 潜行状态下按下换手键(F)执行的命令配置
+sneakSwapCommand:
+  command: "exampleSneakSwapCommand"
+  asConsole: false
+
+# 潜行状态下按下丢弃键(Q)执行的命令配置
+sneakDropCommand:
+  command: "exampleSneakDropCommand"
+  asConsole: false
