@@ -1,1 +1,3 @@
-这是一个可以用快捷键绑定指令的插件
+# **This is a plugin that can bind hotkeys, for more details, please see the following link.**
+
+[modrinth](https://modrinth.com/plugin/meowtools)
